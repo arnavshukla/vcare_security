@@ -1,0 +1,35 @@
+.pagination > li > a
+{
+    background-color: white;
+    color: rgb(33, 37, 41);
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: rgb(33, 37, 41);
+    background-color: #eee;
+    border-color: rgb(33, 37, 41);
+}
+
+.pagination > .active > a
+{
+    color: white;
+    background-color: rgb(33, 37, 41) !Important;
+    border: solid 1px rgb(33, 37, 41) !Important;
+}
+
+.pagination > .active > a:hover
+{
+    background-color: rgb(33, 37, 41) !Important;
+    border: solid 1px rgb(33, 37, 41);
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: rgb(33, 37, 41);
+    border-color: rgb(33, 37, 41);
+}

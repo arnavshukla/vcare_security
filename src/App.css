@@ -1,0 +1,169 @@
+.app-container {
+  padding: 0.7rem;
+}
+
+.main-nav-active{
+	color:rgb(33, 37, 41)
+}
+
+.hidetext { -webkit-text-security: disc; /* Default */ }
+
+body{
+	margin:0;
+	padding:15px;
+	font-family: sans-serif;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table td,.table th{
+  padding:0.5rem 0.5rem !important;
+  border:1px solid #ddd;
+  text-align: center;
+  font-size:11px;
+}
+
+.table th{
+	background-color: rgb(33, 37, 41) !important;
+	color:#ffffff;
+}
+
+.table tbody tr{
+	background-color: #f5f5f5 !important;
+}
+.table-width{
+	width: 60%;
+	margin: 50px auto;
+}
+
+/*Report Table*/
+.tableReport{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.tableReport td,.tableReport th{
+  padding:0.8rem 0.4rem !important;
+  border:1px solid #ddd;
+  text-align: center;
+  font-size:11px;
+}
+
+.tableReport th{
+	background-color: rgb(33, 37, 41) !important;
+	color:#ffffff;
+}
+
+.tableReport tbody tr{
+	background-color: #f5f5f5 !important;
+}
+.tableReport-width{
+	width: 60%;
+	margin: 50px auto;
+}
+
+.error{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 240px;
+    color: floralwhite;
+	font-style: italic;
+}
+
+/*responsive*/
+
+@media(max-width: 500px){
+	.table thead{
+		display: none;
+	}
+
+	.table td,.table th{
+		font-size:12px;
+	  }
+
+	.table, .table tbody, .table tr, .table td{
+		display: block;
+		width: 100%;
+	}
+	.table tr{
+		margin-bottom:15px;
+	}
+	.table td{
+		text-align: right;
+		position: relative;
+	}
+	.table td::before{
+		content: attr(data-label);
+		position: absolute;
+		left:0;
+		width: 50%;
+		padding-left:15px;
+		font-size:12px;
+		font-weight: bold;
+		text-align: left;
+	}
+	.table-width{
+		width: auto;
+		margin: 0;
+	}
+
+	/*Report Table*/
+	/* .tableReport thead{
+		display: none;
+	}
+
+	.tableReport, .tableReport tbody, .tableReport tr, .tableReport td{
+		display: block;
+		width: 100%;
+	}
+	.tableReport tr{
+		margin-bottom:15px;
+	}
+	.tableReport td{
+		text-align: right;
+		position: relative;
+	}
+	.tableReport td::before{
+		content: attr(data-label);
+		position: absolute;
+		left:0;
+		width: auto;
+		padding-left:15px;
+		font-size:11px;
+		font-weight: bold;
+		text-align: left;
+	}
+	.tableReport-width{
+		width: auto;
+		margin: 0;
+	} */
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+
+
+
+
+
+

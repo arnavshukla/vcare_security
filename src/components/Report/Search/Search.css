@@ -1,0 +1,74 @@
+.selectfield{
+    display: flex;
+}
+
+.filterfield{
+    display: table-cell;
+}
+
+.labelHeading{
+    padding: 8px 10px 0px 0px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #fff;
+}
+
+.labelStyle{
+    padding: 8px 10px 0px 0px;
+    color: #fff;
+    font-size: 13px;
+}
+
+.textArea{
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 12px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.search{
+    appearance: none;
+    outline: none;
+    padding: 8px 10px;
+    font-size: 12px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    width: 10%;
+}
+
+.btn{
+    margin-top: 25px;
+    padding: 10px 10px;
+    font-size: 12px; 
+    border: 0px;
+    background:  linear-gradient(-135deg, #c850c0, #4158d0);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: auto;
+  }
+
+  .filterBtn{
+    padding-top: 4px;
+    padding-bottom: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    color: #fff;
+    background:  linear-gradient(-135deg, #c850c0, #4158d0);
+  }
+
+
+  @media(max-width: 500px){
+    .search{
+        width: 32%;
+    }
+    .textArea{
+        max-width: 75%;
+    }
+    .filterfield{
+        display: table-row;
+    }
+  }
